@@ -5,7 +5,7 @@ export class SimpleEvent extends Component {
         btnText: 'Click',
         inputText: ''
     }
-    handlerClick(){
+    handleClick(){
         console.log('Clicked!');
     }
     handleChange = (e) => {
@@ -21,7 +21,7 @@ export class SimpleEvent extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <button className="btn" onClick={this.handlerClick}>
+                    <button className="btn" onClick={this.handleClick}>
                         {this.state.btnText}
                     </button>
                     <input type="text" placeholder="Enter text" onChange={this.handleChange} />
